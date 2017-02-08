@@ -7,6 +7,9 @@ import java.io.*;
  */
 public class FileSaver implements Saver{
     public boolean saveFile(BufferedInputStream data, String filename){
+        if (data==null){
+            return false;
+        }
         File file = new File( filename);
         File folder = new File(file.getParent());
         if (!folder.exists()){
