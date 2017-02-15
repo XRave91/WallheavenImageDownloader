@@ -1,4 +1,4 @@
-package Xrave;
+package com.xrave.wall_downloader;
 
 import java.io.BufferedInputStream;
 
